@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 })
 
 module.exports.getAll = (req, res, next) => {
-  console.log('------------- getAll');
+  console.log('-- getAll');
   console.log(req.body)
   sendActivationEmail(req.body)
   res.json('ok');
