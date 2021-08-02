@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-const { getMaxListeners } = require("../app");
 
 const transporter = nodemailer.createTransport({
     service: "Gmail",

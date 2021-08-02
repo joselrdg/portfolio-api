@@ -21,7 +21,7 @@ module.exports.doEmail = (req, res, next) => {
   console.log(req.body)
   console.log('-- getAll');
 
-  sendActivationEmail(req.body)
+  // sendActivationEmail(req.body)
   res.json('ok');
 };
 
