@@ -1,15 +1,16 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./app.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
+  "name": "go-date",
+  "version": 2,
+  "builds": [
+    {
+      "src": "/api/app.go",
+      "use": "@vercel/go"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/app",
+      "dest": "api/app.go"
+    }
+  ]
 }
