@@ -16,7 +16,9 @@ const cors = require('./api/config/cors.config')
 const mongoose = require('mongoose');
 const createError = require('http-errors');
 const logger = require('morgan');
-const express = require('express');
+const express = require('express')
+const formController = require('./api/controllers/form.controller')
+;
 
 require('./api/config/db.config')
 
@@ -33,8 +35,17 @@ app.use(cors);
 
 /* Routes */
 
-const routes = require('./api/config/routes.config')
-app.use('/api', routes)
+// 
+
+
+app.get('/', (req, res) => res.send('Home Page Route'));
+
+app.get('/about', (req, res) => res.send('About Page Route'));
+
+app.get('/portfolio', (req, res) => res.send('Portfolio Page Route'));
+
+
+app.post('/api/form/contact', formController.doEmail)
 
 /* Handle Errors */
 
