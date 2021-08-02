@@ -12,13 +12,13 @@
         "dest": "/index.js",
         "methods": ["POST", "GET", "PUT", "DELETE"],
         "headers": {
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://joseluisrodriguez-api.vercel.app",
           "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
           "Access-Control-Allow-Credentials": "true"
         }
       }
     ],
     "env": {
-      "CORS_ORIGIN": "https://joseluisrodriguez-api.vercel.app/"
+      "CORS_ORIGIN": "https://joseluisrodriguez-api.vercel.app"
     }
   }
