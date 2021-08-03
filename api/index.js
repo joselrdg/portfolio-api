@@ -11,16 +11,16 @@ require('dotenv').config();
 
 
 // const jwt = require("jsonwebtoken");
-const cors = require('./api/config/cors.config')
+const cors = require('./config/cors.config')
 
 const mongoose = require('mongoose');
 const createError = require('http-errors');
 const logger = require('morgan');
 const express = require('express')
-const formController = require('./api/controllers/form.controller')
+const formController = require('./controllers/form.controller')
 ;
 
-require('./api/config/db.config')
+require('./config/db.config')
 
 const app = express();
 
