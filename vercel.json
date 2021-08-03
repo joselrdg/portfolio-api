@@ -6,18 +6,6 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.js",
-        "methods": ["POST", "GET", "PUT", "DELETE"],
-        "headers": {
-          "Access-Control-Allow-Origin": "https://joseluisrodriguez-api.vercel.app",
-          "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-          "Access-Control-Allow-Credentials": "true"
-        }
-      }
-    ],
     "headers": [
         {
           "source": "/api/(.*)",
